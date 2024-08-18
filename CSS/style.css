@@ -1,0 +1,53 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.chart-container {
+   
+    max-width: 50%;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8; /* Optional: Adds a background color to the chart */
+}
+
+.y-axis {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    height: 300px;
+    border-right: 1px solid #ddd;
+}
+
+.bar {
+    height: 2%; /* Default height, will be updated dynamically */
+    width: 10%; /* Adjusted bar width */
+    display: inline-block;
+    margin: 0 20px;
+    transition: background-color 0.5s, height 0.5s;
+}
+
+.bar-container {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
